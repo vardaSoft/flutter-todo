@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../core/constants/app_constants.dart';
-import '../../../core/theme/app_theme.dart';
-import 'task_provider.dart';
+import '../../../../core/constants/app_constants.dart';
+import '../../../../core/theme/app_theme.dart';
+import '../../data/models/task_model.dart';
+import '../providers/task_provider.dart';
 
 /// Main application widget
 class TodoApp extends ConsumerWidget {
@@ -78,7 +79,7 @@ class _TodoHomePageState extends ConsumerState<TodoHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(AppConstants.appName),
+        title: Text(AppConstants.appName),
       ),
       body: FutureBuilder<void>(
         future: _future,

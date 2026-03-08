@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../data/models/task_model.dart';
-import '../data/repositories/task_repository.dart';
+import '../../data/models/task_model.dart';
+import '../../data/repositories/task_repository.dart';
 
 /// Provider for the task repository
 final taskRepositoryProvider = Provider<TaskRepository>((ref) {

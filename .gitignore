@@ -1,0 +1,12 @@
+.env
+*.key
+*.pem
+*.secret
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.iex/
+iOS/Flutter/Flutter.framework
+iOS/Flutter/Flutter.podspec
